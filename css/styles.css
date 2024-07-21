@@ -222,9 +222,12 @@ img {
     display: flex;
     flex-direction: column;
     border-radius: 0;
+    margin: 0 auto;
   }
   .result-container {
     padding: 40px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
   }
 
   .summary-container {
