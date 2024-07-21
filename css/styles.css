@@ -78,6 +78,7 @@ body {
   text-align: center;
   font-size: 14px;
   color: hsl(241, 100%, 89%);
+  width: 200px;
 }
 
 .summary-container {
@@ -158,21 +159,19 @@ body {
   font-weight: 500;
 }
 
+.left-section {
+  display: flex;
+}
+
 .summary-score {
-    font-size: 14px;
-    font-weight: 500;
-    color: gray;
+  font-size: 14px;
+  font-weight: 500;
+  color: gray;
 }
 
 span {
-    font-weight: 700;
-    color: hsl(224, 30%, 27%);
-}
-
-
-
-.left-section {
-  display: flex;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
 }
 
 button {
@@ -189,7 +188,46 @@ button:hover {
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-
 img {
-    visibility: hidden;
+  visibility: hidden;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 600px) {
+  .result-container {
+    padding: 20px;
+  }
+
+  .summary-container {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .result-container {
+    padding: 10px;
+  }
+
+  .summary-container {
+    padding: 10px;
+  }
+
+  .score-comment {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .preview-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+  }
+  .result-container {
+    padding: 40px;
+  }
+
+  .summary-container {
+    padding: 40px;
+  }
 }
