@@ -1,0 +1,32 @@
+/** @format */
+body {
+    font-size: 18px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.preview-card {
+    display: flex;
+}
+
+.result-container {
+    
+}
+
+.summary-container {
+    background-color: pink;
+    width: 200px;
+    padding: 20px;
+}
+
+.summary-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    display: flex;
+}
