@@ -21,6 +21,7 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
+        color: black;
         font-size: 11px;
         text-align: center;
       }
@@ -33,13 +34,15 @@
     <div class="preview-card">
       <!-- RESULT CONTAINER -->
       <div class="result-container">
-        <p>Your Reslt</p>
+        <p class="result">Your Result</p>
         <div class="score-container">
-          <p>76</p>
-          <p>of 100</p>
+          <div class="score-container-content">
+            <p id="score">76</p>
+            <p>of 100</p>
+          </div>
         </div>
-        <p>Great</p>
-        <p>
+        <p class="rate-class">Great</p>
+        <p class="score-comment">
           You scored higher than 65% of <br />
           the people who have taken <br />these tests.
         </p>
@@ -47,35 +50,37 @@
 
       <!-- SUMMARY CONTAINER -->
       <div class="summary-container">
-        <p>Sumary</p>
+        <p class="summary">Sumary</p>
 
-        <div class="summary-content">
-          <div class="left-section">
-            <img src="" alt="icon" class="icon" />
-            <p class="summary-name">Reaction</p>
+        <div class="summary-content-container">
+          <div class="reaction-content">
+            <div class="left-section">
+              <img src="" alt="i" class="icon" />
+              <p class="reaction-name">Reaction</p>
+            </div>
+            <p class="summary-score"><span>80 </span> / 100</p>
           </div>
-          <p class="summary-score"><span>80 </span> / 100</p>
-        </div>
-        <div class="summary-content">
-          <div class="left-section">
-            <img src="" alt="icon" class="icon" />
-            <p class="summary-name">Memory</p>
+          <div class="memory-content">
+            <div class="left-section">
+              <img src="" alt="i" class="icon" />
+              <p class="memory-name">Memory</p>
+            </div>
+            <p class="summary-score"><span>80 </span> / 100</p>
           </div>
-          <p class="summary-score"><span>80 </span> / 100</p>
-        </div>
-        <div class="summary-content">
-          <div class="left-section">
-            <img src="" alt="icon" class="icon" />
-            <p class="summary-name">Verbal</p>
+          <div class="verbal-content">
+            <div class="left-section">
+              <img src="" alt="i" class="icon" />
+              <p class="verbal-name">Verbal</p>
+            </div>
+            <p class="summary-score"><span>80 </span> / 100</p>
           </div>
-          <p class="summary-score"><span>80 </span> / 100</p>
-        </div>
-        <div class="summary-content">
-          <div class="left-section">
-            <img src="" alt="icon" class="icon" />
-            <p class="summary-name">Visual</p>
+          <div class="visual-content">
+            <div class="left-section">
+              <img src="" alt="i" class="icon" />
+              <p class="visual-name">Visual</p>
+            </div>
+            <p class="summary-score"><span>80 </span> / 100</p>
           </div>
-          <p class="summary-score"><span>80 </span> / 100</p>
         </div>
         <button>Continue</button>
       </div>
@@ -85,7 +90,7 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">Oyebode Precious Isaac</a>.
     </div>
   </body>
 </html>
